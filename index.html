@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>通知設定 | Trademark Alert</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <header>
+    <h1>Trademark Alert</h1>
+  </header>
+  
+  <main>
+    <h2>通知設定</h2>
+    <p>商標の登録状況の通知や警告を確認します。</p>
+
+    <section>
+      <h3>サイト内通知</h3>
+      <div class="notification-item">
+        <span>最新のイベント</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      
+      <div class="notification-item">
+        <span>お知らせ</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      <div class="notification-item">
+        <span>ニュース</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      <div class="notification-item">
+        <span>アカウント情報の変更</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+    </section>
+
+    <section class="push-notification">
+      <h3>プッシュ通知</h3>
+    
+      <!-- 通知無効な場合に表示 -->
+      <div class="push-warning">
+        <strong>デバイス権限：</strong>
+        <span class="status-icon">⚠️</span>
+        <span class="status-text">無効</span>
+        <p>
+          プッシュ通知を有効にして、取引アラート、市場の動向、そして新規キャンペーン情報をリアルタイムで受信しよう。
+          <a href="/enable-push">有効にする &gt;</a>
+        </p>
+      </div>
+      
+      <div class="notification-item">
+        <span>アカウント情報の変更</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      <div class="notification-item">
+        <span>市場データ</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      <div class="notification-item">
+        <span>商標申請アラート</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+      <div class="notification-item">
+        <span>商標登録アラート</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Trademark Alert. All rights reserved.</p>
+  </footer>
+</body>
+</html>
