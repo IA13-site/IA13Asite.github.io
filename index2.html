@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>マイページ</title>
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #fff;
+      --border: #e0e0e0;
+      --text: #333;
+      --red: #e53935;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .card + .card {
+      margin-top: 1.5rem;
+    }
+    .card__header {
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+    }
+    .card__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .card__item:hover {
+      background: #fafafa;
+    }
+    .card__item:first-of-type {
+      border-top: none;
+    }
+    .card__item-icon {
+      width: 1.5rem;
+      text-align: center;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .card__item-text {
+      flex-grow: 1;
+    }
+    .card__item-arrow {
+      width: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #999;
+    }
+    .logout {
+      color: var(--red);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>マイページ</h1>
+
+    <!-- ご利用履歴 -->
+    <div class="card">
+      <div class="card__header">ご利用履歴</div>
+      <div class="card__item">
+        <div class="card__item-icon">🔒</div>
+        <div class="card__item-text">メルパス変更</div>
+        <div class="card__item-arrow">›</div>
+      </div>
+      <div class="card__item">
+        <div class="card__item-icon">🔖</div>
+        <div class="card__item-text">ブクマ</div>
+        <div class="card__item-arrow">›</div>
+      </div>
+      <div class="card__item">
+        <div class="card__item-icon">🕒</div>
+        <div class="card__item-text">閲覧履歴</div>
+        <div class="card__item-arrow">›</div>
+      </div>
+    </div>
+
+    <!-- ユーザー情報設定 -->
+    <div class="card">
+      <div class="card__item">
+        <div class="card__item-text">ユーザー情報設定</div>
+        <div class="card__item-arrow">›</div>
+      </div>
+    </div>
+
+    <!-- その他 -->
+    <div class="card">
+      <div class="card__header">その他</div>
+      <div class="card__item">
+        <div class="card__item-icon logout">🚪</div>
+        <div class="card__item-text logout">ログアウト</div>
+        <div class="card__item-arrow logout">›</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
